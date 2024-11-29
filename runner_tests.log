@@ -1,0 +1,14 @@
+2024-11-29 10:19:37,807, WARNING, Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\usr\PycharmProjects\Project_12\.venv\module_12_4.py", line 25, in test_run
+    var2 = Runner('Bob'-5, 5)
+                  ~~~~~^~
+TypeError: unsupported operand type(s) for -: 'str' and 'int'
+2024-11-29 10:19:37,808, WARNING, Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\usr\PycharmProjects\Project_12\.venv\module_12_4.py", line 15, in test_walk
+    var1 = Runner("Alex", -5)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\usr\PycharmProjects\Project_12\.venv\runner_12_4.py", line 12, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
